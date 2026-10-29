@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 6% 5%;
+    --foreground: 40 12% 94%;
+    --card: 240 5% 7%;
+    --card-foreground: 40 12% 94%;
+    --popover: 240 5% 9%;
+    --popover-foreground: 40 12% 94%;
+    --primary: 39 43% 56%;
+    --primary-foreground: 240 10% 8%;
+    --secondary: 240 4% 13%;
+    --secondary-foreground: 40 12% 94%;
+    --muted: 240 4% 13%;
+    --muted-foreground: 240 5% 60%;
+    --accent: 240 4% 15%;
+    --accent-foreground: 40 12% 96%;
+    --destructive: 0 60% 48%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5% 16%;
+    --input: 240 5% 19%;
+    --ring: 39 43% 56%;
+    --chart-1: 39 43% 56%;
+    --chart-2: 30 25% 72%;
+    --chart-3: 150 14% 52%;
+    --chart-4: 220 18% 62%;
+    --chart-5: 15 45% 58%;
+    --radius: 0.75rem;
+    --font-heading: 'Vazirmatn', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Vazirmatn', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Vazirmatn', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --sidebar-background: 240 6% 5%;
+    --sidebar-foreground: 40 12% 92%;
+    --sidebar-primary: 39 43% 56%;
+    --sidebar-primary-foreground: 240 10% 8%;
+    --sidebar-accent: 240 4% 13%;
+    --sidebar-accent-foreground: 40 12% 96%;
+    --sidebar-border: 240 5% 14%;
+    --sidebar-ring: 39 43% 56%;
+  }
+
+  .dark {
+    --background: 240 6% 5%;
+    --foreground: 40 12% 94%;
+    --card: 240 5% 7%;
+    --card-foreground: 40 12% 94%;
+    --popover: 240 5% 9%;
+    --popover-foreground: 40 12% 94%;
+    --primary: 39 43% 56%;
+    --primary-foreground: 240 10% 8%;
+    --secondary: 240 4% 13%;
+    --secondary-foreground: 40 12% 94%;
+    --muted: 240 4% 13%;
+    --muted-foreground: 240 5% 60%;
+    --accent: 240 4% 15%;
+    --accent-foreground: 40 12% 96%;
+    --destructive: 0 60% 48%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5% 16%;
+    --input: 240 5% 19%;
+    --ring: 39 43% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    font-feature-settings: "ss01";
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.28);
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.5);
+  }
+}

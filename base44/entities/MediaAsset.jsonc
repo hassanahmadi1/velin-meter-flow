@@ -1,0 +1,31 @@
+{
+  "name": "MediaAsset",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "file_url": {
+      "type": "string"
+    },
+    "file_type": {
+      "type": "string",
+      "enum": [
+        "image",
+        "video",
+        "document"
+      ],
+      "default": "image"
+    },
+    "size_label": {
+      "type": "string"
+    },
+    "folder": {
+      "type": "string",
+      "default": "\u0639\u0645\u0648\u0645\u06cc"
+    }
+  },
+  "required": [
+    "file_url"
+  ]
+}

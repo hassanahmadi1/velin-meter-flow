@@ -1,0 +1,32 @@
+{
+  "name": "Visit",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "visits": {
+      "type": "number",
+      "default": 0
+    },
+    "page_views": {
+      "type": "number",
+      "default": 0
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "instagram",
+        "google",
+        "direct",
+        "telegram",
+        "referral"
+      ],
+      "default": "direct"
+    }
+  },
+  "required": [
+    "date"
+  ]
+}

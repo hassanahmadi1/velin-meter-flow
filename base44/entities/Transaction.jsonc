@@ -1,0 +1,48 @@
+{
+  "name": "Transaction",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "income",
+        "expense"
+      ],
+      "default": "income"
+    },
+    "amount": {
+      "type": "number",
+      "default": 0
+    },
+    "category": {
+      "type": "string"
+    },
+    "method": {
+      "type": "string",
+      "enum": [
+        "gateway",
+        "card",
+        "cash",
+        "transfer"
+      ],
+      "default": "gateway"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "amount"
+  ]
+}

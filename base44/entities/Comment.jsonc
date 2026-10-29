@@ -1,0 +1,43 @@
+{
+  "name": "Comment",
+  "type": "object",
+  "properties": {
+    "author_name": {
+      "type": "string"
+    },
+    "product_name": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "comment",
+        "question"
+      ],
+      "default": "comment"
+    },
+    "rating": {
+      "type": "number",
+      "default": 5
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ],
+      "default": "pending"
+    },
+    "reply": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "author_name",
+    "body"
+  ]
+}

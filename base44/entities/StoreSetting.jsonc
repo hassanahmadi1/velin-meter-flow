@@ -1,0 +1,50 @@
+{
+  "name": "StoreSetting",
+  "type": "object",
+  "properties": {
+    "store_name": {
+      "type": "string",
+      "default": "\u0648\u0644\u06cc\u0646"
+    },
+    "support_phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "shipping_fee": {
+      "type": "number",
+      "default": 0
+    },
+    "free_shipping_threshold": {
+      "type": "number",
+      "default": 0
+    },
+    "tax_percent": {
+      "type": "number",
+      "default": 9
+    },
+    "low_stock_threshold": {
+      "type": "number",
+      "default": 5
+    },
+    "notify_orders": {
+      "type": "boolean",
+      "default": true
+    },
+    "notify_tickets": {
+      "type": "boolean",
+      "default": true
+    },
+    "notify_reviews": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
